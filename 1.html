@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+   <title>Магазин одежды и аксессуаров из натуральных материалов</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="img/logoShop.png" alt="Логотип" width="70px">
+        </div>
+        <div id="menu"> 
+            <span id="basket">
+                <img src="img/basketWhite.png" alt="Корзина" width="50px"  > 
+                <!-- onclick="openBasket()" -->
+            </span>
+            
+            <span id="numberPurchase">
+                0
+            </span>
+            <span>
+                <a href="#">Contacts</a>
+            </span>
+            <span>
+                <a href="#">Product</a>
+            </span>
+            <span>
+                <a href="#">About us</a>
+            </span>
+            <span>
+                <a href="#">Home</a>
+            </span>
+        </div>
+       
+    </header>
+    <div id="shadow">
+        <div id="modal">
+            <div id="modal_txt"></div>
+            <div id="clearBasket"></div>
+            <div id="obSummOut"></div>
+        </div>
+    </div>
+    <div  id="banner">
+        <img src="img/fonNew.png" alt="Баннер" width="100%" height="800px"> 
+        <input type="button" value="Покупать сейчас!">  
+    </div>
+
+    <div id="purchase">
+        <div class="purchase">
+            <div class="fotoPurchase">
+                <img src="img/kidDress.jpg" alt="изображение товара" width="300px" height="300px">
+            </div>
+            <div class="aboutPurchase">
+                <span>Тип: Платье детское</span>
+                <br>
+               <span> Название: Голубой веночек</span>
+                <br>
+                <span>Цена: 333 RUB</span>
+                
+                <br>
+                <span>Производитель: ООО"Ивановский текстить"</span>
+                <br>
+            </div>
+            <div class="buyPurchase">
+                <input type="button" value="Добавить в корзину"  onclick="getToBasket('AB1255', `<img src='img/kidDress.jpg' alt='изображение товара' width='50px'>`, 'Платье детское','Голубой веночек', 333, 1)">
+            </div>
+        </div>
+        <div class="purchase">
+            <div class="fotoPurchase">
+                <img src="img/jaketMan.jpg" alt="изображение товара" width="300px" height="300px">
+            </div>
+            <div class="aboutPurchase">
+               <span> Тип: Костюм мужской</span>
+                <br>
+                <span>Название: Коричневая солидность</span>
+                <br>
+                <span>Цена: 1051 RUB</span>
+                
+                <br>
+                <span>Производитель: ООО"Ивановский текстить"</span>
+                <br>
+            </div>
+            <div class="buyPurchase">
+                <input type="button" value="Добавить в корзину" onclick="getToBasket('AD248', `<img src='img/jaketMan.jpg' alt='изображение товара' width='50px'>`,'Костюм мужской','Коричневая солидность', 1051, 1)">
+            </div>
+        </div>
+        <div class="purchase">
+            <div class="fotoPurchase">
+                <img src="img/bagPaul.jpg" alt="изображение товара" width="300px" height="300px">
+            </div>
+            <div class="aboutPurchase">
+                <span>Тип: Сумка из камыша</span>
+                <br>
+                 <span>Название:Paul</span>
+                <br>
+                <span>Цена: 515 RUB</span>
+                
+                <br>
+                <span>Производитель: ООО"Камышовый рай"</span>
+                <br>
+            </div>
+            <div class="buyPurchase">
+                <input type="button" value="Добавить в корзину" onclick="getToBasket('Aa756', `<img src='img/bagPaul.jpg' alt='изображение товара' width='50px'>`,'Сумка из камыша','Paul', 515, 1)">
+            </div>
+        </div>
+        <div class="purchase">
+            <div class="fotoPurchase">
+                <img src="img/bagRoud.jpg" alt="изображение товара" width="300px" height="300px">
+            </div>
+            <div class="aboutPurchase">
+                <span>Тип: Сумка из тростника</span>
+                <br>
+                <span>Название: Flower</span>
+                <br>
+                <span>Цена: 469 RUB</span>
+                
+                <br>
+                <span>Производитель: ООО"Тростниковый рай"</span>
+                <br>
+            </div>
+            <div class="buyPurchase">
+                <input type="button" value="Добавить в корзину" onclick="getToBasket('AR35622',` <img src='img/bagRoud.jpg' alt='изображение товара' width='50px'>`,'Сумка из тростника','Flower', 469, 1)">
+            </div>
+        </div>
+        <div class="purchase">
+            <div class="fotoPurchase">
+                <img src="img/dressWoman.jpg" alt="изображение товара" width="300px" height="300px">
+            </div>
+            <div class="aboutPurchase">
+                <span>Тип: Платье женское</span>
+                <br>
+                <span>Название: Летняя лёгкость</span>
+                <br>
+                <span>Цена: 3000 RUB</span>
+                
+                <br>
+                <span>Производитель: ООО"Shop Bardi"</span>
+                <br>
+            </div>
+            <div class="buyPurchase">
+                <input type="button" value="Добавить в корзину" onclick="getToBasket('ADW356', `<img src='img/dressWoman.jpg' alt='изображение товара' width='50px'>`,'Платье женское','Летняя лёгкость', 3000, 1)">
+            </div>
+        </div>
+        <div class="purchase">
+            <div class="fotoPurchase">
+                <img src="img/box.jpg" alt="изображение товара" width="300px" height="300px">
+            </div>
+            <div class="aboutPurchase">
+                <span>Тип: Кожаный кейс для наушников Apple</span>
+                <br>
+                <span>Название: Зелёная волна</span>
+                <br>
+                <span>Цена: 1910 RUB</span>
+                
+                <br>
+                <span>Производитель: ООО"Товар для удобства"</span>
+                <br>
+            </div>
+            <div class="buyPurchase">
+                <input type="button" value="Добавить в корзину" onclick="getToBasket('AD1254', `<img src='img/box.jpg' alt='изображение товара' width='50px'>`,'Кожаный кейс для наушников Apple','Зелёная волна', 1910, 1)">
+            </div>
+        </div>
+        <div class="purchase">
+            <div class="fotoPurchase">
+                <img src="img/dishes.jpg" alt="изображение товара" width="300px" height="300px">
+            </div>
+            <div class="aboutPurchase">
+                <span>Тип: Набор посуды</span>
+                <br>
+                <span>Название: Рай на Бали</span>
+                <br>
+                <span>Цена: 3303 RUB</span>
+                
+                <br>
+                 <span>Производитель:ООО"Товар для удобства"</span>
+                <br>
+            </div>
+            <div class="buyPurchase">
+                <input type="button" value="Добавить в корзину" onclick="getToBasket('AD3005', `<img src='img/dishes.jpg' alt='изображение товара' width='50px'>`,'Набор посуды','Рай на Бали', 3303, 1)">
+            </div>
+        </div>
+        <div class="purchase">
+            <div class="fotoPurchase">
+                <img src="img/accesoir.jpg" alt="изображение товара" width="300px" height="300px">
+            </div>
+            <div class="aboutPurchase">
+                <span>Тип: Колье янтарное</span>
+                <br>
+                <span>Название: Красный глаз</span>
+                <br>
+                <span>Цена: 2068 RUB</span>
+                
+                <br>
+                <span>Производитель: ООО"Янтарь на берегу"</span>
+                <br>
+            </div>
+            <div class="buyPurchase">
+                <input type="button" value="Добавить в корзину" onclick="getToBasket('ALL25356', `<img src='img/accesoir.jpg' alt='изображение товара' width='50px'>`,'Колье янтарное','Красный глаз', 2068, 1)">
+            </div>
+        </div>
+        <div class="purchase">
+            <div class="fotoPurchase">
+                <img src="img/acceriesBadthroom.jpg" alt="изображение товара" width="300px" height="300px">
+            </div>
+            <div class="aboutPurchase">
+                <span>Тип: Набор аксессуаров для ванной</span>
+                <br>
+                <span>Название: Удобный</span>
+                <br>
+                <span>Цена: 2997 RUB</span>
+                
+                <br>
+               <span>Производитель: ООО"Ванная в дом"</span>
+                <br>
+            </div>
+            <div class="buyPurchase">
+                <input type="button" value="Добавить в корзину" onclick="getToBasket('ADQ3560', `<img src='img/acceriesBadthroom.jpg' alt='изображение товара' width='50px'>`,'Набор аксессуаров для ванной','Удобный', 2997, 1)">
+            </div>
+        </div>
+        <div class="purchase">
+            <div class="fotoPurchase">
+                <img src="img/accedoriesSauna.jpg" alt="изображение товара" width="300px" height="300px">
+            </div>
+            <div class="aboutPurchase">
+                <span>Тип: Набор аксессуаров для сауны</span>
+                <br>
+                <span>Название: Зелёный веник</span>
+                <br>
+                <span>Цена: 1053 RUB</span>
+                
+                <br>
+                <span>Производитель: ООО"Сауна для всех"</span>
+                <br>
+            </div>
+            <div class="buyPurchase">
+                <input type="button" value="Добавить в корзину"  onclick="getToBasket('AD38746', `<img src='img/accedoriesSauna.jpg' alt='изображение товара' width='50px'>`,'Набор аксессуаров для сауны','Зелёный веник', 1053, 1)">
+            </div>
+        </div> 
+    </div>
+    <footer>
+            ©Lyubov_programy 2023
+    </footer>
+   <script src="main.js"></script>
+</body>
+</html>
