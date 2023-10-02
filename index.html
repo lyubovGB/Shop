@@ -2,15 +2,35 @@
 <html>
 <head>
     <meta charset='utf-8'>
-   <title>Магазин одежды и аксессуаров из натуральных материалов</title>
+   <title>Магазин</title>
    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div id="logo">
-            <img src="img/logoShop.png" alt="Логотип" width="70px">
-        </div>
-        <div id="menu"> 
+        <a href="../index.html" id="link">  Любовь Глебова </a>
+        <div id="buttonTheme">
+            <img src="../img/night_n.png"  alt="Кнопка" width="70px">
+        </div>  
+       
+        <div id="dropMenu">Другие проекты<img src="https://e7.pngegg.com/pngimages/474/986/png-clipart-drop-down-list-arrow-computer-icons-arrow-angle-rectangle-thumbnail.png" width="20px">
+            <div id="dropLink">
+                
+                <a href="../калькулятор/index.html">Калькулятор</a>
+                <a href="#">Магазин</a>
+                <a href="../лента/index.html">Лента новостей</a>
+                <a href="../слайдер/1.html">Слайдер</a>
+                <a href="../index.html">Главная</a>
+            </div>
+        </div> 
+        
+       
+    </header>
+    <div id="bear">
+        <a  href="https://github.com/lyubovGB/Shop"><img title="Смотреть код на GitHub" src="https://media.tenor.com/o4zJUoaOr2EAAAAi/bubududu-panda.gif" width="150px"></a> 
+     </div>
+   
+    <div id="menu"> 
+        
             <span id="basket">
                 <img src="img/basketWhite.png" alt="Корзина" width="50px"  > 
                 <!-- onclick="openBasket()" -->
@@ -19,21 +39,7 @@
             <span id="numberPurchase">
                 0
             </span>
-            <span>
-                <a href="#">Contacts</a>
-            </span>
-            <span>
-                <a href="#">Product</a>
-            </span>
-            <span>
-                <a href="#">About us</a>
-            </span>
-            <span>
-                <a href="#">Home</a>
-            </span>
         </div>
-       
-    </header>
     <div id="shadow">
         <div id="modal">
             <div id="modal_txt"></div>
@@ -41,12 +47,9 @@
             <div id="obSummOut"></div>
         </div>
     </div>
-    <div  id="banner">
-        <img src="img/fonNew.png" alt="Баннер" width="100%" height="800px"> 
-        <input type="button" value="Покупать сейчас!">  
-    </div>
 
-    <div id="purchase">
+    <div id="purchase"> 
+        
         <div class="purchase">
             <div class="fotoPurchase">
                 <img src="img/kidDress.jpg" alt="изображение товара" width="300px" height="300px">
@@ -239,7 +242,7 @@
         </div> 
     </div>
     <footer>
-            ©Lyubov_programy 2023
+        ©Lyubov_programy 2023
     </footer>
    <script src="main.js"></script>
 </body>
