@@ -1,3 +1,27 @@
+///переключение темы
+let buttonTheme = document.querySelectorAll('#buttonTheme');
+let click2 = true;
+let body = document.querySelectorAll('body');
+buttonTheme[0].onclick=function(){
+    if(click2==true){
+        body[0].style.background = 'white'
+        body[0].style.color = '#535353'
+        link.style.color = '#535353'
+        dropMenu.style.color = '#535353'
+        buttonTheme[0].innerHTML=`<img src="../img/day_n.png" id="but_img_2" alt="Кнопка" width="70px">`
+        click2=false;
+    }
+        else{
+            body[0].style.background = 'black'
+            body[0].style.color = '#e5dada'
+            link.style.color = '#e5dada'
+            dropMenu.style.color = '#e5dada'
+            buttonTheme[0].innerHTML=`<img src="../img/night_n.png" id="but_img_2" alt="Кнопка" width="70px">`;
+            click2=true;
+        }   
+}
+
+
 let shadow = document.querySelectorAll('#shadow');
 let modal = document.querySelectorAll('#modal');
 let basket = document.querySelectorAll('#basket');
